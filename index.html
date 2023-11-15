@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab10 - Question 4</title>
+  </head>
+  <body>
+    <div>Array: <span id="array"></span></div>
+    <div>Highest number: <span id="highest-number"></span></div>
+
+    <script>
+      // Creates a preset array of numbers
+      const numbers = [1, 2, 3, 4, 5];
+
+      // Chooses the largest number from that array
+      const highestNumer = Math.max(...numbers);
+
+      // Display the results
+      document.querySelector("#array").innerHTML = numbers.join(", ");
+      document.querySelector("#highest-number").innerHTML = highestNumer;
+    </script>
+  </body>
+</html>
